@@ -1,0 +1,17 @@
+{
+  "name": "ezra-booking-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation for Ezra booking flow",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "playwright": "^1.39.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  }
+}

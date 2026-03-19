@@ -1,0 +1,1136 @@
+{
+  "config": {
+    "configFile": "/Users/denny.nguyen/Projects/qa_function_health_assignment/playwright.config.js",
+    "rootDir": "/Users/denny.nguyen/Projects/qa_function_health_assignment/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/denny.nguyen/Projects/qa_function_health_assignment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/denny.nguyen/Projects/qa_function_health_assignment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/Users/denny.nguyen/Projects/qa_function_health_assignment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/denny.nguyen/Projects/qa_function_health_assignment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/Users/denny.nguyen/Projects/qa_function_health_assignment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/denny.nguyen/Projects/qa_function_health_assignment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "func_health_report_2026-03-18T01-44-43-479Z",
+          "embedScreenshots": true
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results-2026-03-18T01-44-43-479Z.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit-2026-03-18T01-44-43-479Z.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "questionnaire.spec.js",
+      "file": "questionnaire.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Questionnaire Test Suite",
+          "file": "questionnaire.spec.js",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify access questionnaire from another user.",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 171065,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:44.852Z] [INFO] [timeoutManager.js:68] Test setup: launching browser and logging in\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:46.377Z] [INFO] [LoginPage.js:25] email= denny.nguyen.professional@gmail.com  pass= Testdemo!\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:47.206Z] [INFO] [LoginPage.js:54] verifyUserLoggedIn\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:44:49.108Z] [DEBUG] [LoginPage.js:66] 👉 \"Accept\" button detected, clicking...\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:44:49.169Z] [DEBUG] [LoginPage.js:77] ⚠️ Waiting 5000ms for server to stabilize...\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:44:54.189Z] [SUCCESS] [LoginPage.js:80] ✅ Login successful!\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:44:54.191Z] [SUCCESS] [timeoutManager.js:67] ✅  Login successful\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:54.339Z] [INFO] [timeoutManager.js:68] baseURL= https://myezra-staging.ezra.com/\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] user1= [object Object]\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] user2= [object Object]\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] 🧪 Step 1. Login to user 1.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] 🧪 Step 2. Create a questionnaire successfully.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [Questionnaire.js:298] completedQuestionnaire\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:55.359Z] [INFO] [Questionnaire.js:506] 🖱️ clickButtonByTextNth.buttonText= Start index= 0 timeout= 300000\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:44:55.432Z] [INFO] [Questionnaire.js:512] Clicked \"Start\" button at index 0\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:03.444Z] [DEBUG] [Questionnaire.js:306] 🔄 1. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:03.445Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:08.453Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:08.473Z] [INFO] [Questionnaire.js:201] 🔥 [getCurrentContent] Section detected: \"General Questions\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:08.473Z] [DEBUG] [Questionnaire.js:322] textToMatch= general questions before we get to know you a little bit better, there are a few quick\n\t\t\tquestions needed to get us started. this won’t take long.\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:08.474Z] [DEBUG] [Questionnaire.js:324] entry= General Questions,async () => await this.clickContinueButton(10000)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:08.474Z] [DEBUG] [Questionnaire.js:325] textToMatch= general questions before we get to know you a little bit better, there are a few quick\n\t\t\tquestions needed to get us started. this won’t take long.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:08.474Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:08.534Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:09.045Z] [DEBUG] [Questionnaire.js:306] 🔄 2. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:09.046Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:14.058Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:14.082Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Do you, Denny Nguyen, intend to get the scan for yourself or are you filling out the Medical Questionnaire for another person?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:14.082Z] [DEBUG] [Questionnaire.js:322] textToMatch= do you, denny nguyen, intend to get the scan for yourself or are you filling out the medical questionnaire for another person? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:14.083Z] [DEBUG] [Questionnaire.js:324] entry= intend to get the scan for yourself or are you filling out the Medical Questionnaire for another person?,async () => {\n        await this.clickButtonByName(\"Myself\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:14.083Z] [DEBUG] [Questionnaire.js:325] textToMatch= do you, denny nguyen, intend to get the scan for yourself or are you filling out the medical questionnaire for another person? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:14.083Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Myself\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:14.128Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:14.185Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:14.694Z] [DEBUG] [Questionnaire.js:306] 🔄 3. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:14.695Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:19.703Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:19.720Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy. Read Policy\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:19.720Z] [DEBUG] [Questionnaire.js:322] textToMatch= please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy. read policy \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:19.720Z] [DEBUG] [Questionnaire.js:324] entry= Please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy.,async () => {\n        await this.clickButtonByName(\"I understand\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:19.720Z] [DEBUG] [Questionnaire.js:325] textToMatch= please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy. read policy \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:19.720Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: I understand\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:19.762Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:19.828Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:20.339Z] [DEBUG] [Questionnaire.js:306] 🔄 4. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:20.340Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:25.353Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:25.379Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"What is your current weight?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:25.379Z] [DEBUG] [Questionnaire.js:322] textToMatch= what is your current weight? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:25.379Z] [DEBUG] [Questionnaire.js:324] entry= What is your current weight?,async () => {\n        await this.fillInput('#weight', 170);\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:25.379Z] [DEBUG] [Questionnaire.js:325] textToMatch= what is your current weight? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:25.380Z] [INFO] [Questionnaire.js:107] fillInput.selector=#weight,value=170\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:26.619Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:26.667Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:27.177Z] [DEBUG] [Questionnaire.js:306] 🔄 5. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:27.177Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:32.191Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:32.213Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"What is your current height?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:32.213Z] [DEBUG] [Questionnaire.js:322] textToMatch= what is your current height? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:32.213Z] [DEBUG] [Questionnaire.js:324] entry= What is your current height?,async () => {\n        await this.fillInput('#height\\\\.heightFeet', 5);\n        await this.fillInput('#height\\\\.heightInches', 2);\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:32.214Z] [DEBUG] [Questionnaire.js:325] textToMatch= what is your current height? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:32.214Z] [INFO] [Questionnaire.js:107] fillInput.selector=#height\\.heightFeet,value=5\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:33.348Z] [INFO] [Questionnaire.js:107] fillInput.selector=#height\\.heightInches,value=2\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:34.469Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:34.522Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:35.031Z] [DEBUG] [Questionnaire.js:306] 🔄 6. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:35.032Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:40.045Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:40.064Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"What is your ethnic origin?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:40.064Z] [DEBUG] [Questionnaire.js:322] textToMatch= what is your ethnic origin? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:40.064Z] [DEBUG] [Questionnaire.js:324] entry= What is your ethnic origin?,async () => {\n        await this.clickButtonByName(\"White or Caucasian\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:40.064Z] [DEBUG] [Questionnaire.js:325] textToMatch= what is your ethnic origin? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:40.064Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: White or Caucasian\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:40.094Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:40.139Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:40.653Z] [DEBUG] [Questionnaire.js:306] 🔄 7. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:40.653Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:45.662Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:45.680Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Please provide your address.\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:45.680Z] [DEBUG] [Questionnaire.js:322] textToMatch= please provide your address. \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:45.680Z] [DEBUG] [Questionnaire.js:324] entry= Please provide your address.,async () => {\n        await this.fillAddress({\n          address1: \"123 Main Street\",\n          address2: \"Apt 5\",\n          city: \"Fremont\",\n          state: \"California\",\n          zip: \"94536\"\n        });\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:45.680Z] [DEBUG] [Questionnaire.js:325] textToMatch= please provide your address. \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:45.680Z] [INFO] [Questionnaire.js:119] fillAddress\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:45.857Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:45.926Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:46.436Z] [DEBUG] [Questionnaire.js:306] 🔄 8. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:46.436Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:51.449Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:51.470Z] [INFO] [Questionnaire.js:201] 🔥 [getCurrentContent] Section detected: \"Your Medical History\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:51.470Z] [DEBUG] [Questionnaire.js:322] textToMatch= your medical history tell us more information about yourself so we can personalize your scan results.\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:51.470Z] [DEBUG] [Questionnaire.js:324] entry= Tell us more information about yourself so we can personalize your scan results.,async () => await this.clickContinueButton()\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:51.471Z] [DEBUG] [Questionnaire.js:325] textToMatch= your medical history tell us more information about yourself so we can personalize your scan results.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:51.471Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:51.541Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:52.048Z] [DEBUG] [Questionnaire.js:306] 🔄 9. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:52.049Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:57.058Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:57.078Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Our scans are for general health screening. They are not designed to diagnose or monitor medical conditions, investigate symptoms, abnormal imaging/labs, or monitor for recurrence of cancer. These scans are less detailed than organ-specific imaging that may include IV contrast and do not replace tests your doctor may recommend. Please confirm you understand the above statement. To learn more click here.\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:57.078Z] [DEBUG] [Questionnaire.js:322] textToMatch= our scans are for general health screening. they are not designed to diagnose or monitor medical conditions, investigate symptoms, abnormal imaging/labs, or monitor for recurrence of cancer. these scans are less detailed than organ-specific imaging that may include iv contrast and do not replace tests your doctor may recommend. please confirm you understand the above statement. to learn more click here. \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:57.078Z] [DEBUG] [Questionnaire.js:324] entry= Our scans are for general health screening. They are not designed to diagnose or monitor medical conditions,,async () => {\n        await this.clickButtonByName(\"Yes\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:57.079Z] [DEBUG] [Questionnaire.js:325] textToMatch= our scans are for general health screening. they are not designed to diagnose or monitor medical conditions, investigate symptoms, abnormal imaging/labs, or monitor for recurrence of cancer. these scans are less detailed than organ-specific imaging that may include iv contrast and do not replace tests your doctor may recommend. please confirm you understand the above statement. to learn more click here. \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:57.079Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:57.111Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:45:57.155Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:57.663Z] [DEBUG] [Questionnaire.js:306] 🔄 10. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:45:57.663Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:02.670Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:02.685Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Do you currently have a Primary Care Provider?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:02.686Z] [DEBUG] [Questionnaire.js:322] textToMatch= do you currently have a primary care provider? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:02.686Z] [DEBUG] [Questionnaire.js:324] entry= Do you currently have a Primary Care Provider?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:02.686Z] [DEBUG] [Questionnaire.js:325] textToMatch= do you currently have a primary care provider? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:02.686Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:02.729Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:02.774Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:03.287Z] [DEBUG] [Questionnaire.js:306] 🔄 11. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:03.287Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:08.299Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:08.320Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Have you had any recent Emergency Room visits or hospitalizations that require follow-up care?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:08.321Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had any recent emergency room visits or hospitalizations that require follow-up care? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:08.321Z] [DEBUG] [Questionnaire.js:324] entry= Have you had any recent Emergency Room visits or hospitalizations that require follow-up care?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:08.321Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had any recent emergency room visits or hospitalizations that require follow-up care? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:08.321Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:08.349Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:08.392Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:08.900Z] [DEBUG] [Questionnaire.js:306] 🔄 12. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:08.900Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:13.905Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:13.917Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Do you have any medical conditions?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:13.917Z] [DEBUG] [Questionnaire.js:322] textToMatch= do you have any medical conditions? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:13.917Z] [DEBUG] [Questionnaire.js:324] entry= Do you have any,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:13.917Z] [DEBUG] [Questionnaire.js:325] textToMatch= do you have any medical conditions? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:13.918Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:13.947Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:13.992Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:14.505Z] [DEBUG] [Questionnaire.js:306] 🔄 13. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:14.505Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:19.516Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:19.537Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Have you had any surgeries or cosmetic procedures in the past?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:19.538Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had any surgeries or cosmetic procedures in the past? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:19.538Z] [DEBUG] [Questionnaire.js:324] entry= have you had any surgeries or cosmetic procedures in the past?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:19.538Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had any surgeries or cosmetic procedures in the past? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:19.538Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:19.566Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:19.610Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:20.120Z] [DEBUG] [Questionnaire.js:306] 🔄 14. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:20.120Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:25.128Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:25.143Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Have you had or do you currently have cancer?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:25.143Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had or do you currently have cancer? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:25.143Z] [DEBUG] [Questionnaire.js:324] entry= Have you had or do you currently have cancer?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:25.144Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had or do you currently have cancer? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:25.144Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:25.187Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:25.228Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:25.735Z] [DEBUG] [Questionnaire.js:306] 🔄 15. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:25.736Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:30.745Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:30.767Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Has anyone in your family been diagnosed with cancer?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:30.767Z] [DEBUG] [Questionnaire.js:322] textToMatch= has anyone in your family been diagnosed with cancer? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:30.767Z] [DEBUG] [Questionnaire.js:324] entry= Has anyone in your family been diagnosed with cancer?,async () => {\n        await this.clickButtonByName(\"Yes\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:30.767Z] [DEBUG] [Questionnaire.js:325] textToMatch= has anyone in your family been diagnosed with cancer? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:30.767Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:30.804Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:30.869Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:31.384Z] [DEBUG] [Questionnaire.js:306] 🔄 16. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:31.384Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:36.398Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:36.421Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"What type(s) of cancer have your family member(s) had?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:36.421Z] [DEBUG] [Questionnaire.js:322] textToMatch= what type(s) of cancer have your family member(s) had? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:36.421Z] [DEBUG] [Questionnaire.js:324] entry= What type(s) of cancer have your family member(s) had?,async () => {\n        //await this.fillFamilyCancerHistory([{relation: \"Mother\",location: \"Breast\"},{relation: \"Father\",location: \"Lung\"}]);\n        await this.fillFamilyCancerHistory([{\n          relation: \"Mother\",\n          location: \"Breast\"\n        }]);\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:36.421Z] [DEBUG] [Questionnaire.js:325] textToMatch= what type(s) of cancer have your family member(s) had? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:36.421Z] [INFO] [Questionnaire.js:132] fillFamilyCancerHistory\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:36.511Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:36.569Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:37.078Z] [DEBUG] [Questionnaire.js:306] 🔄 17. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:37.078Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:42.084Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:42.099Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Are you currently taking any medications?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:42.099Z] [DEBUG] [Questionnaire.js:322] textToMatch= are you currently taking any medications? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:42.099Z] [DEBUG] [Questionnaire.js:324] entry= Are you currently taking any medications?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:42.100Z] [DEBUG] [Questionnaire.js:325] textToMatch= are you currently taking any medications? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:42.100Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:42.140Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:42.185Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:42.692Z] [DEBUG] [Questionnaire.js:306] 🔄 18. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:42.693Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:47.705Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:47.733Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Have you had any imaging within the last year?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:47.733Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had any imaging within the last year? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:47.733Z] [DEBUG] [Questionnaire.js:324] entry= Have you had any imaging within the last year?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:47.733Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had any imaging within the last year? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:47.733Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:47.760Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:47.805Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:48.315Z] [DEBUG] [Questionnaire.js:306] 🔄 19. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:48.315Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:53.323Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:53.341Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Have you had a prostate specific antigen (PSA) checked before?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:53.341Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had a prostate specific antigen (psa) checked before? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:53.341Z] [DEBUG] [Questionnaire.js:324] entry= Have you had a prostate specific antigen (PSA) checked before?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:53.342Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had a prostate specific antigen (psa) checked before? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:53.342Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:53.396Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:53.442Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:53.950Z] [DEBUG] [Questionnaire.js:306] 🔄 20. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:53.951Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:58.958Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:58.972Z] [INFO] [Questionnaire.js:201] 🔥 [getCurrentContent] Section detected: \"Scan Safety\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:58.973Z] [DEBUG] [Questionnaire.js:322] textToMatch= scan safety it’s important to be safe during a scan and the next few questions will help us set up everything to make you comfortable on the day. don’t worry you’ll be done in 2-3 minutes.\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:58.973Z] [DEBUG] [Questionnaire.js:324] entry= Scan Safety,async () => {\n        await this.clickContinueButton();\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:46:58.973Z] [DEBUG] [Questionnaire.js:325] textToMatch= scan safety it’s important to be safe during a scan and the next few questions will help us set up everything to make you comfortable on the day. don’t worry you’ll be done in 2-3 minutes.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:58.973Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:59.049Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:46:59.050Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:00.007Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:00.517Z] [DEBUG] [Questionnaire.js:306] 🔄 21. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:00.518Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:05.529Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:05.550Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"For MRI safety, please indicate if you have or currently wearing any of the following items or devices.\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:05.550Z] [DEBUG] [Questionnaire.js:322] textToMatch= for mri safety, please indicate if you have or currently wearing any of the following items or devices. \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:05.550Z] [DEBUG] [Questionnaire.js:324] entry= For MRI safety, please indicate if you have or currently wearing,async () => {\n        const checkboxText2 = 'I confirm that I have reviewed the list of items and devices below and declare that none apply to me at the time of my MRI.';\n        await this.clickCheckboxByText(checkboxText2);\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:05.550Z] [DEBUG] [Questionnaire.js:325] textToMatch= for mri safety, please indicate if you have or currently wearing any of the following items or devices. \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:05.551Z] [INFO] [Questionnaire.js:101] clickCheckBoxByText\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:05.582Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:05.640Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:06.145Z] [DEBUG] [Questionnaire.js:306] 🔄 22. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:06.146Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:11.155Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:11.179Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"What to expect during your scan\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:11.179Z] [DEBUG] [Questionnaire.js:322] textToMatch= what to expect during your scan \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:11.179Z] [DEBUG] [Questionnaire.js:324] entry= What to expect during your scan,async () => await this.clickContinueButton()\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:11.179Z] [DEBUG] [Questionnaire.js:325] textToMatch= what to expect during your scan \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:11.179Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:11.221Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:11.734Z] [DEBUG] [Questionnaire.js:306] 🔄 23. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:11.735Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:16.748Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:16.763Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Are you claustrophobic?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:16.763Z] [DEBUG] [Questionnaire.js:322] textToMatch= are you claustrophobic? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:16.763Z] [DEBUG] [Questionnaire.js:324] entry= Are you claustrophobic?,async () => {\n        await this.clickButtonByName(\"Yes\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:16.763Z] [DEBUG] [Questionnaire.js:325] textToMatch= are you claustrophobic? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:16.763Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:16.794Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:16.837Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:17.345Z] [DEBUG] [Questionnaire.js:306] 🔄 24. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:17.345Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:22.352Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:22.365Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"If claustrophobia prevents you from completing your scan, a refund will not be available. However, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan.\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:22.365Z] [DEBUG] [Questionnaire.js:322] textToMatch= if claustrophobia prevents you from completing your scan, a refund will not be available. however, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan. \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:22.366Z] [DEBUG] [Questionnaire.js:324] entry= If claustrophobia prevents you from completing your scan, a refund will not be available. However, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan.,async () => {\n        await this.clickButtonByName(\"I understand\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:22.366Z] [DEBUG] [Questionnaire.js:325] textToMatch= if claustrophobia prevents you from completing your scan, a refund will not be available. however, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan. \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:22.366Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: I understand\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:22.393Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:22.437Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:22.947Z] [DEBUG] [Questionnaire.js:306] 🔄 25. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:22.947Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:27.960Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:27.981Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"Will you require any disability accommodations for your imaging scan or to complete your medical intake?\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:27.981Z] [DEBUG] [Questionnaire.js:322] textToMatch= will you require any disability accommodations for your imaging scan or to complete your medical intake? \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:27.981Z] [DEBUG] [Questionnaire.js:324] entry= Will you require any disability accommodations for your imaging scan or to complete your medical intake?,async () => {\n        await this.clickButtonByName(\"No\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:27.981Z] [DEBUG] [Questionnaire.js:325] textToMatch= will you require any disability accommodations for your imaging scan or to complete your medical intake? \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:27.981Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:28.013Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:28.055Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:28.562Z] [DEBUG] [Questionnaire.js:306] 🔄 26. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:28.563Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:33.572Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:33.591Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: \"I hereby attest and affirm that I have disclosed my medical history accurately, completely, and to the best of my knowledge. If there are any changes to my medical history, I will notify Ezra at hello@ezra.com.\"\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:33.591Z] [DEBUG] [Questionnaire.js:322] textToMatch= i hereby attest and affirm that i have disclosed my medical history accurately, completely, and to the best of my knowledge. if there are any changes to my medical history, i will notify ezra at hello@ezra.com. \n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:33.591Z] [DEBUG] [Questionnaire.js:324] entry= I hereby attest and affirm that I have disclosed my medical history accurately,async () => {\n        await this.clickButtonByName(\"Yes\");\n        await this.clickContinueButton();\n      }\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:33.591Z] [DEBUG] [Questionnaire.js:325] textToMatch= i hereby attest and affirm that i have disclosed my medical history accurately, completely, and to the best of my knowledge. if there are any changes to my medical history, i will notify ezra at hello@ezra.com. \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:33.591Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:33.630Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:33.675Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:34.184Z] [DEBUG] [Questionnaire.js:306] 🔄 27. Getting next screen... 🔄\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:34.184Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:47:34.977Z] [SUCCESS] [Questionnaire.js:245] ✅ Congratulations! You’re all set. found.\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:47:34.977Z] [SUCCESS] [Questionnaire.js:308] ✅ Questionnaire completed!\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:47:34.977Z] [SUCCESS] [Questionnaire.js:341] 🎉 Flow finished\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:34.980Z] [INFO] [timeoutManager.js:67] Test full questionnaire completed.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:34.980Z] [INFO] [timeoutManager.js:67] 🧪 Step 3. Logout from user 1.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:34.980Z] [INFO] [LoginPage.js:19] gotoHome.testUrl= https://myezra-staging.ezra.com/\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:35.765Z] [INFO] [LoginPage.js:54] verifyUserLoggedIn\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:35.845Z] [DEBUG] [LoginPage.js:69] 👉 \"Accept\" button not present, skipping...\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:35.845Z] [DEBUG] [LoginPage.js:77] ⚠️ Waiting 5000ms for server to stabilize...\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:47:40.850Z] [SUCCESS] [LoginPage.js:80] ✅ Login successful!\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:47:41.265Z] [SUCCESS] [LoginPage.js:162] ✅ User logged out and returned to login page.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:41.265Z] [INFO] [task_queues:60] 🧪 Step 4. Login to user 2 and Assume is newly create. So no document, appointment, etc\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:41.266Z] [INFO] [LoginPage.js:25] email= microgame.io.2026@gmail.com  pass= Testdemo@\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:41.341Z] [INFO] [task_queues:60] 🧪 Step 4. Verify user 2 is empty.\n"
+                        },
+                        {
+                          "text": "🐞 [2026-03-18T01:47:41.341Z] [DEBUG] [LoginPage.js:114] verifyTextOnPage.expectedText= no appointments  timeout= 5000  exactMatch= true\n"
+                        },
+                        {
+                          "text": "✅ [2026-03-18T01:47:45.187Z] [SUCCESS] [LoginPage.js:122] ✅ Text \"no appointments\" is displayed on the page. URL: https://myezra-staging.ezra.com/\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:45.188Z] [INFO] [timeoutManager.js:67] Test access questionnaire from another user completed.\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:45.189Z] [INFO] [timeoutManager.js:68] Teardown: return to home\n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:45.189Z] [INFO] [LoginPage.js:19] gotoHome.testUrl= \n"
+                        },
+                        {
+                          "text": "ℹ️ [2026-03-18T01:47:45.422Z] [INFO] [timeoutManager.js:68] Test teardown: logging out and closing browser\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:08.452Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:14.058Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:19.703Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:25.352Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:32.191Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:40.044Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:45.662Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:51.449Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:45:57.058Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:02.670Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:08.299Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:13.904Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:19.516Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:25.128Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:30.745Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:36.397Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:42.084Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:47.704Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:53.322Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:46:58.957Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:47:05.528Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:47:11.155Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:47:16.748Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:47:22.352Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:47:27.959Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:47:33.571Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!\n"
+                        },
+                        {
+                          "text": "⚠️ [2026-03-18T01:47:45.189Z] [WARN] [timeoutManager.js:67] Skip gotoHome (page already closed)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-03-18T01:44:44.102Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a390df21484dec8865be-751f5d74652632ca617e",
+              "file": "questionnaire.spec.js",
+              "line": 57,
+              "column": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-18T01:44:43.483Z",
+    "duration": 182140.623,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

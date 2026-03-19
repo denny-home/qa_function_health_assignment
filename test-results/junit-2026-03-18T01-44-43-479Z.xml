@@ -1,0 +1,418 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="182.140623">
+<testsuite name="questionnaire.spec.js" timestamp="2026-03-18T01:44:43.499Z" hostname="chromium" tests="1" failures="0" skipped="0" time="171.065" errors="0">
+<testcase name="Questionnaire Test Suite › Verify access questionnaire from another user." classname="questionnaire.spec.js" time="171.065">
+<system-out>
+<![CDATA[ℹ️ [2026-03-18T01:44:44.852Z] [INFO] [timeoutManager.js:68] Test setup: launching browser and logging in
+ℹ️ [2026-03-18T01:44:46.377Z] [INFO] [LoginPage.js:25] email= denny.nguyen.professional@gmail.com  pass= Testdemo!
+ℹ️ [2026-03-18T01:44:47.206Z] [INFO] [LoginPage.js:54] verifyUserLoggedIn
+🐞 [2026-03-18T01:44:49.108Z] [DEBUG] [LoginPage.js:66] 👉 "Accept" button detected, clicking...
+🐞 [2026-03-18T01:44:49.169Z] [DEBUG] [LoginPage.js:77] ⚠️ Waiting 5000ms for server to stabilize...
+✅ [2026-03-18T01:44:54.189Z] [SUCCESS] [LoginPage.js:80] ✅ Login successful!
+✅ [2026-03-18T01:44:54.191Z] [SUCCESS] [timeoutManager.js:67] ✅  Login successful
+ℹ️ [2026-03-18T01:44:54.339Z] [INFO] [timeoutManager.js:68] baseURL= https://myezra-staging.ezra.com/
+ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] user1= [object Object]
+ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] user2= [object Object]
+ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] 🧪 Step 1. Login to user 1.
+ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [timeoutManager.js:68] 🧪 Step 2. Create a questionnaire successfully.
+ℹ️ [2026-03-18T01:44:54.340Z] [INFO] [Questionnaire.js:298] completedQuestionnaire
+ℹ️ [2026-03-18T01:44:55.359Z] [INFO] [Questionnaire.js:506] 🖱️ clickButtonByTextNth.buttonText= Start index= 0 timeout= 300000
+ℹ️ [2026-03-18T01:44:55.432Z] [INFO] [Questionnaire.js:512] Clicked "Start" button at index 0
+🐞 [2026-03-18T01:45:03.444Z] [DEBUG] [Questionnaire.js:306] 🔄 1. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:03.445Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:08.453Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:08.473Z] [INFO] [Questionnaire.js:201] 🔥 [getCurrentContent] Section detected: "General Questions"
+🐞 [2026-03-18T01:45:08.473Z] [DEBUG] [Questionnaire.js:322] textToMatch= general questions before we get to know you a little bit better, there are a few quick
+			questions needed to get us started. this won’t take long.
+🐞 [2026-03-18T01:45:08.474Z] [DEBUG] [Questionnaire.js:324] entry= General Questions,async () => await this.clickContinueButton(10000)
+🐞 [2026-03-18T01:45:08.474Z] [DEBUG] [Questionnaire.js:325] textToMatch= general questions before we get to know you a little bit better, there are a few quick
+			questions needed to get us started. this won’t take long.
+ℹ️ [2026-03-18T01:45:08.474Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:08.534Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:09.045Z] [DEBUG] [Questionnaire.js:306] 🔄 2. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:09.046Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:14.058Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:14.082Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Do you, Denny Nguyen, intend to get the scan for yourself or are you filling out the Medical Questionnaire for another person?"
+🐞 [2026-03-18T01:45:14.082Z] [DEBUG] [Questionnaire.js:322] textToMatch= do you, denny nguyen, intend to get the scan for yourself or are you filling out the medical questionnaire for another person? 
+🐞 [2026-03-18T01:45:14.083Z] [DEBUG] [Questionnaire.js:324] entry= intend to get the scan for yourself or are you filling out the Medical Questionnaire for another person?,async () => {
+        await this.clickButtonByName("Myself");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:45:14.083Z] [DEBUG] [Questionnaire.js:325] textToMatch= do you, denny nguyen, intend to get the scan for yourself or are you filling out the medical questionnaire for another person? 
+ℹ️ [2026-03-18T01:45:14.083Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Myself
+ℹ️ [2026-03-18T01:45:14.128Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:14.185Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:14.694Z] [DEBUG] [Questionnaire.js:306] 🔄 3. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:14.695Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:19.703Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:19.720Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy. Read Policy"
+🐞 [2026-03-18T01:45:19.720Z] [DEBUG] [Questionnaire.js:322] textToMatch= please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy. read policy 
+🐞 [2026-03-18T01:45:19.720Z] [DEBUG] [Questionnaire.js:324] entry= Please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy.,async () => {
+        await this.clickButtonByName("I understand");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:45:19.720Z] [DEBUG] [Questionnaire.js:325] textToMatch= please confirm you have read and accepted our cancellation, missed appointment, rescheduling and refund policy. read policy 
+ℹ️ [2026-03-18T01:45:19.720Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: I understand
+ℹ️ [2026-03-18T01:45:19.762Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:19.828Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:20.339Z] [DEBUG] [Questionnaire.js:306] 🔄 4. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:20.340Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:25.353Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:25.379Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "What is your current weight?"
+🐞 [2026-03-18T01:45:25.379Z] [DEBUG] [Questionnaire.js:322] textToMatch= what is your current weight? 
+🐞 [2026-03-18T01:45:25.379Z] [DEBUG] [Questionnaire.js:324] entry= What is your current weight?,async () => {
+        await this.fillInput('#weight', 170);
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:45:25.379Z] [DEBUG] [Questionnaire.js:325] textToMatch= what is your current weight? 
+ℹ️ [2026-03-18T01:45:25.380Z] [INFO] [Questionnaire.js:107] fillInput.selector=#weight,value=170
+ℹ️ [2026-03-18T01:45:26.619Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:26.667Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:27.177Z] [DEBUG] [Questionnaire.js:306] 🔄 5. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:27.177Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:32.191Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:32.213Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "What is your current height?"
+🐞 [2026-03-18T01:45:32.213Z] [DEBUG] [Questionnaire.js:322] textToMatch= what is your current height? 
+🐞 [2026-03-18T01:45:32.213Z] [DEBUG] [Questionnaire.js:324] entry= What is your current height?,async () => {
+        await this.fillInput('#height\\.heightFeet', 5);
+        await this.fillInput('#height\\.heightInches', 2);
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:45:32.214Z] [DEBUG] [Questionnaire.js:325] textToMatch= what is your current height? 
+ℹ️ [2026-03-18T01:45:32.214Z] [INFO] [Questionnaire.js:107] fillInput.selector=#height\.heightFeet,value=5
+ℹ️ [2026-03-18T01:45:33.348Z] [INFO] [Questionnaire.js:107] fillInput.selector=#height\.heightInches,value=2
+ℹ️ [2026-03-18T01:45:34.469Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:34.522Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:35.031Z] [DEBUG] [Questionnaire.js:306] 🔄 6. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:35.032Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:40.045Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:40.064Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "What is your ethnic origin?"
+🐞 [2026-03-18T01:45:40.064Z] [DEBUG] [Questionnaire.js:322] textToMatch= what is your ethnic origin? 
+🐞 [2026-03-18T01:45:40.064Z] [DEBUG] [Questionnaire.js:324] entry= What is your ethnic origin?,async () => {
+        await this.clickButtonByName("White or Caucasian");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:45:40.064Z] [DEBUG] [Questionnaire.js:325] textToMatch= what is your ethnic origin? 
+ℹ️ [2026-03-18T01:45:40.064Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: White or Caucasian
+ℹ️ [2026-03-18T01:45:40.094Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:40.139Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:40.653Z] [DEBUG] [Questionnaire.js:306] 🔄 7. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:40.653Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:45.662Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:45.680Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Please provide your address."
+🐞 [2026-03-18T01:45:45.680Z] [DEBUG] [Questionnaire.js:322] textToMatch= please provide your address. 
+🐞 [2026-03-18T01:45:45.680Z] [DEBUG] [Questionnaire.js:324] entry= Please provide your address.,async () => {
+        await this.fillAddress({
+          address1: "123 Main Street",
+          address2: "Apt 5",
+          city: "Fremont",
+          state: "California",
+          zip: "94536"
+        });
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:45:45.680Z] [DEBUG] [Questionnaire.js:325] textToMatch= please provide your address. 
+ℹ️ [2026-03-18T01:45:45.680Z] [INFO] [Questionnaire.js:119] fillAddress
+ℹ️ [2026-03-18T01:45:45.857Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:45.926Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:46.436Z] [DEBUG] [Questionnaire.js:306] 🔄 8. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:46.436Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:51.449Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:51.470Z] [INFO] [Questionnaire.js:201] 🔥 [getCurrentContent] Section detected: "Your Medical History"
+🐞 [2026-03-18T01:45:51.470Z] [DEBUG] [Questionnaire.js:322] textToMatch= your medical history tell us more information about yourself so we can personalize your scan results.
+🐞 [2026-03-18T01:45:51.470Z] [DEBUG] [Questionnaire.js:324] entry= Tell us more information about yourself so we can personalize your scan results.,async () => await this.clickContinueButton()
+🐞 [2026-03-18T01:45:51.471Z] [DEBUG] [Questionnaire.js:325] textToMatch= your medical history tell us more information about yourself so we can personalize your scan results.
+ℹ️ [2026-03-18T01:45:51.471Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:51.541Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:52.048Z] [DEBUG] [Questionnaire.js:306] 🔄 9. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:52.049Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:45:57.058Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:45:57.078Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Our scans are for general health screening. They are not designed to diagnose or monitor medical conditions, investigate symptoms, abnormal imaging/labs, or monitor for recurrence of cancer. These scans are less detailed than organ-specific imaging that may include IV contrast and do not replace tests your doctor may recommend. Please confirm you understand the above statement. To learn more click here."
+🐞 [2026-03-18T01:45:57.078Z] [DEBUG] [Questionnaire.js:322] textToMatch= our scans are for general health screening. they are not designed to diagnose or monitor medical conditions, investigate symptoms, abnormal imaging/labs, or monitor for recurrence of cancer. these scans are less detailed than organ-specific imaging that may include iv contrast and do not replace tests your doctor may recommend. please confirm you understand the above statement. to learn more click here. 
+🐞 [2026-03-18T01:45:57.078Z] [DEBUG] [Questionnaire.js:324] entry= Our scans are for general health screening. They are not designed to diagnose or monitor medical conditions,,async () => {
+        await this.clickButtonByName("Yes");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:45:57.079Z] [DEBUG] [Questionnaire.js:325] textToMatch= our scans are for general health screening. they are not designed to diagnose or monitor medical conditions, investigate symptoms, abnormal imaging/labs, or monitor for recurrence of cancer. these scans are less detailed than organ-specific imaging that may include iv contrast and do not replace tests your doctor may recommend. please confirm you understand the above statement. to learn more click here. 
+ℹ️ [2026-03-18T01:45:57.079Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes
+ℹ️ [2026-03-18T01:45:57.111Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:45:57.155Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:45:57.663Z] [DEBUG] [Questionnaire.js:306] 🔄 10. Getting next screen... 🔄
+🐞 [2026-03-18T01:45:57.663Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:02.670Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:02.685Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Do you currently have a Primary Care Provider?"
+🐞 [2026-03-18T01:46:02.686Z] [DEBUG] [Questionnaire.js:322] textToMatch= do you currently have a primary care provider? 
+🐞 [2026-03-18T01:46:02.686Z] [DEBUG] [Questionnaire.js:324] entry= Do you currently have a Primary Care Provider?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:02.686Z] [DEBUG] [Questionnaire.js:325] textToMatch= do you currently have a primary care provider? 
+ℹ️ [2026-03-18T01:46:02.686Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:02.729Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:02.774Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:03.287Z] [DEBUG] [Questionnaire.js:306] 🔄 11. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:03.287Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:08.299Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:08.320Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Have you had any recent Emergency Room visits or hospitalizations that require follow-up care?"
+🐞 [2026-03-18T01:46:08.321Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had any recent emergency room visits or hospitalizations that require follow-up care? 
+🐞 [2026-03-18T01:46:08.321Z] [DEBUG] [Questionnaire.js:324] entry= Have you had any recent Emergency Room visits or hospitalizations that require follow-up care?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:08.321Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had any recent emergency room visits or hospitalizations that require follow-up care? 
+ℹ️ [2026-03-18T01:46:08.321Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:08.349Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:08.392Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:08.900Z] [DEBUG] [Questionnaire.js:306] 🔄 12. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:08.900Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:13.905Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:13.917Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Do you have any medical conditions?"
+🐞 [2026-03-18T01:46:13.917Z] [DEBUG] [Questionnaire.js:322] textToMatch= do you have any medical conditions? 
+🐞 [2026-03-18T01:46:13.917Z] [DEBUG] [Questionnaire.js:324] entry= Do you have any,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:13.917Z] [DEBUG] [Questionnaire.js:325] textToMatch= do you have any medical conditions? 
+ℹ️ [2026-03-18T01:46:13.918Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:13.947Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:13.992Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:14.505Z] [DEBUG] [Questionnaire.js:306] 🔄 13. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:14.505Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:19.516Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:19.537Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Have you had any surgeries or cosmetic procedures in the past?"
+🐞 [2026-03-18T01:46:19.538Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had any surgeries or cosmetic procedures in the past? 
+🐞 [2026-03-18T01:46:19.538Z] [DEBUG] [Questionnaire.js:324] entry= have you had any surgeries or cosmetic procedures in the past?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:19.538Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had any surgeries or cosmetic procedures in the past? 
+ℹ️ [2026-03-18T01:46:19.538Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:19.566Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:19.610Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:20.120Z] [DEBUG] [Questionnaire.js:306] 🔄 14. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:20.120Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:25.128Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:25.143Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Have you had or do you currently have cancer?"
+🐞 [2026-03-18T01:46:25.143Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had or do you currently have cancer? 
+🐞 [2026-03-18T01:46:25.143Z] [DEBUG] [Questionnaire.js:324] entry= Have you had or do you currently have cancer?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:25.144Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had or do you currently have cancer? 
+ℹ️ [2026-03-18T01:46:25.144Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:25.187Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:25.228Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:25.735Z] [DEBUG] [Questionnaire.js:306] 🔄 15. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:25.736Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:30.745Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:30.767Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Has anyone in your family been diagnosed with cancer?"
+🐞 [2026-03-18T01:46:30.767Z] [DEBUG] [Questionnaire.js:322] textToMatch= has anyone in your family been diagnosed with cancer? 
+🐞 [2026-03-18T01:46:30.767Z] [DEBUG] [Questionnaire.js:324] entry= Has anyone in your family been diagnosed with cancer?,async () => {
+        await this.clickButtonByName("Yes");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:30.767Z] [DEBUG] [Questionnaire.js:325] textToMatch= has anyone in your family been diagnosed with cancer? 
+ℹ️ [2026-03-18T01:46:30.767Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes
+ℹ️ [2026-03-18T01:46:30.804Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:30.869Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:31.384Z] [DEBUG] [Questionnaire.js:306] 🔄 16. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:31.384Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:36.398Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:36.421Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "What type(s) of cancer have your family member(s) had?"
+🐞 [2026-03-18T01:46:36.421Z] [DEBUG] [Questionnaire.js:322] textToMatch= what type(s) of cancer have your family member(s) had? 
+🐞 [2026-03-18T01:46:36.421Z] [DEBUG] [Questionnaire.js:324] entry= What type(s) of cancer have your family member(s) had?,async () => {
+        //await this.fillFamilyCancerHistory([{relation: "Mother",location: "Breast"},{relation: "Father",location: "Lung"}]);
+        await this.fillFamilyCancerHistory([{
+          relation: "Mother",
+          location: "Breast"
+        }]);
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:36.421Z] [DEBUG] [Questionnaire.js:325] textToMatch= what type(s) of cancer have your family member(s) had? 
+ℹ️ [2026-03-18T01:46:36.421Z] [INFO] [Questionnaire.js:132] fillFamilyCancerHistory
+ℹ️ [2026-03-18T01:46:36.511Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:36.569Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:37.078Z] [DEBUG] [Questionnaire.js:306] 🔄 17. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:37.078Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:42.084Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:42.099Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Are you currently taking any medications?"
+🐞 [2026-03-18T01:46:42.099Z] [DEBUG] [Questionnaire.js:322] textToMatch= are you currently taking any medications? 
+🐞 [2026-03-18T01:46:42.099Z] [DEBUG] [Questionnaire.js:324] entry= Are you currently taking any medications?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:42.100Z] [DEBUG] [Questionnaire.js:325] textToMatch= are you currently taking any medications? 
+ℹ️ [2026-03-18T01:46:42.100Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:42.140Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:42.185Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:42.692Z] [DEBUG] [Questionnaire.js:306] 🔄 18. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:42.693Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:47.705Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:47.733Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Have you had any imaging within the last year?"
+🐞 [2026-03-18T01:46:47.733Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had any imaging within the last year? 
+🐞 [2026-03-18T01:46:47.733Z] [DEBUG] [Questionnaire.js:324] entry= Have you had any imaging within the last year?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:47.733Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had any imaging within the last year? 
+ℹ️ [2026-03-18T01:46:47.733Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:47.760Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:47.805Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:48.315Z] [DEBUG] [Questionnaire.js:306] 🔄 19. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:48.315Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:53.323Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:53.341Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Have you had a prostate specific antigen (PSA) checked before?"
+🐞 [2026-03-18T01:46:53.341Z] [DEBUG] [Questionnaire.js:322] textToMatch= have you had a prostate specific antigen (psa) checked before? 
+🐞 [2026-03-18T01:46:53.341Z] [DEBUG] [Questionnaire.js:324] entry= Have you had a prostate specific antigen (PSA) checked before?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:53.342Z] [DEBUG] [Questionnaire.js:325] textToMatch= have you had a prostate specific antigen (psa) checked before? 
+ℹ️ [2026-03-18T01:46:53.342Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:46:53.396Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:53.442Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:46:53.950Z] [DEBUG] [Questionnaire.js:306] 🔄 20. Getting next screen... 🔄
+🐞 [2026-03-18T01:46:53.951Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:46:58.958Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:46:58.972Z] [INFO] [Questionnaire.js:201] 🔥 [getCurrentContent] Section detected: "Scan Safety"
+🐞 [2026-03-18T01:46:58.973Z] [DEBUG] [Questionnaire.js:322] textToMatch= scan safety it’s important to be safe during a scan and the next few questions will help us set up everything to make you comfortable on the day. don’t worry you’ll be done in 2-3 minutes.
+🐞 [2026-03-18T01:46:58.973Z] [DEBUG] [Questionnaire.js:324] entry= Scan Safety,async () => {
+        await this.clickContinueButton();
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:46:58.973Z] [DEBUG] [Questionnaire.js:325] textToMatch= scan safety it’s important to be safe during a scan and the next few questions will help us set up everything to make you comfortable on the day. don’t worry you’ll be done in 2-3 minutes.
+ℹ️ [2026-03-18T01:46:58.973Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:46:59.049Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+ℹ️ [2026-03-18T01:46:59.050Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:47:00.007Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:47:00.517Z] [DEBUG] [Questionnaire.js:306] 🔄 21. Getting next screen... 🔄
+🐞 [2026-03-18T01:47:00.518Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:47:05.529Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:47:05.550Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "For MRI safety, please indicate if you have or currently wearing any of the following items or devices."
+🐞 [2026-03-18T01:47:05.550Z] [DEBUG] [Questionnaire.js:322] textToMatch= for mri safety, please indicate if you have or currently wearing any of the following items or devices. 
+🐞 [2026-03-18T01:47:05.550Z] [DEBUG] [Questionnaire.js:324] entry= For MRI safety, please indicate if you have or currently wearing,async () => {
+        const checkboxText2 = 'I confirm that I have reviewed the list of items and devices below and declare that none apply to me at the time of my MRI.';
+        await this.clickCheckboxByText(checkboxText2);
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:47:05.550Z] [DEBUG] [Questionnaire.js:325] textToMatch= for mri safety, please indicate if you have or currently wearing any of the following items or devices. 
+ℹ️ [2026-03-18T01:47:05.551Z] [INFO] [Questionnaire.js:101] clickCheckBoxByText
+ℹ️ [2026-03-18T01:47:05.582Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:47:05.640Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:47:06.145Z] [DEBUG] [Questionnaire.js:306] 🔄 22. Getting next screen... 🔄
+🐞 [2026-03-18T01:47:06.146Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:47:11.155Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:47:11.179Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "What to expect during your scan"
+🐞 [2026-03-18T01:47:11.179Z] [DEBUG] [Questionnaire.js:322] textToMatch= what to expect during your scan 
+🐞 [2026-03-18T01:47:11.179Z] [DEBUG] [Questionnaire.js:324] entry= What to expect during your scan,async () => await this.clickContinueButton()
+🐞 [2026-03-18T01:47:11.179Z] [DEBUG] [Questionnaire.js:325] textToMatch= what to expect during your scan 
+ℹ️ [2026-03-18T01:47:11.179Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:47:11.221Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:47:11.734Z] [DEBUG] [Questionnaire.js:306] 🔄 23. Getting next screen... 🔄
+🐞 [2026-03-18T01:47:11.735Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:47:16.748Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:47:16.763Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Are you claustrophobic?"
+🐞 [2026-03-18T01:47:16.763Z] [DEBUG] [Questionnaire.js:322] textToMatch= are you claustrophobic? 
+🐞 [2026-03-18T01:47:16.763Z] [DEBUG] [Questionnaire.js:324] entry= Are you claustrophobic?,async () => {
+        await this.clickButtonByName("Yes");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:47:16.763Z] [DEBUG] [Questionnaire.js:325] textToMatch= are you claustrophobic? 
+ℹ️ [2026-03-18T01:47:16.763Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes
+ℹ️ [2026-03-18T01:47:16.794Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:47:16.837Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:47:17.345Z] [DEBUG] [Questionnaire.js:306] 🔄 24. Getting next screen... 🔄
+🐞 [2026-03-18T01:47:17.345Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:47:22.352Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:47:22.365Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "If claustrophobia prevents you from completing your scan, a refund will not be available. However, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan."
+🐞 [2026-03-18T01:47:22.365Z] [DEBUG] [Questionnaire.js:322] textToMatch= if claustrophobia prevents you from completing your scan, a refund will not be available. however, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan. 
+🐞 [2026-03-18T01:47:22.366Z] [DEBUG] [Questionnaire.js:324] entry= If claustrophobia prevents you from completing your scan, a refund will not be available. However, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan.,async () => {
+        await this.clickButtonByName("I understand");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:47:22.366Z] [DEBUG] [Questionnaire.js:325] textToMatch= if claustrophobia prevents you from completing your scan, a refund will not be available. however, you may reschedule for a 25% fee of the package price (promo codes excluded), as appointment time and resources are reserved for your scan. 
+ℹ️ [2026-03-18T01:47:22.366Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: I understand
+ℹ️ [2026-03-18T01:47:22.393Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:47:22.437Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:47:22.947Z] [DEBUG] [Questionnaire.js:306] 🔄 25. Getting next screen... 🔄
+🐞 [2026-03-18T01:47:22.947Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:47:27.960Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:47:27.981Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "Will you require any disability accommodations for your imaging scan or to complete your medical intake?"
+🐞 [2026-03-18T01:47:27.981Z] [DEBUG] [Questionnaire.js:322] textToMatch= will you require any disability accommodations for your imaging scan or to complete your medical intake? 
+🐞 [2026-03-18T01:47:27.981Z] [DEBUG] [Questionnaire.js:324] entry= Will you require any disability accommodations for your imaging scan or to complete your medical intake?,async () => {
+        await this.clickButtonByName("No");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:47:27.981Z] [DEBUG] [Questionnaire.js:325] textToMatch= will you require any disability accommodations for your imaging scan or to complete your medical intake? 
+ℹ️ [2026-03-18T01:47:27.981Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: No
+ℹ️ [2026-03-18T01:47:28.013Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:47:28.055Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:47:28.562Z] [DEBUG] [Questionnaire.js:306] 🔄 26. Getting next screen... 🔄
+🐞 [2026-03-18T01:47:28.563Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+🐞 [2026-03-18T01:47:33.572Z] [DEBUG] [Questionnaire.js:187] 🔥 [getCurrentContent] Detecting current UI content
+ℹ️ [2026-03-18T01:47:33.591Z] [INFO] [Questionnaire.js:215] 👉 [getCurrentContent] Question detected: "I hereby attest and affirm that I have disclosed my medical history accurately, completely, and to the best of my knowledge. If there are any changes to my medical history, I will notify Ezra at hello@ezra.com."
+🐞 [2026-03-18T01:47:33.591Z] [DEBUG] [Questionnaire.js:322] textToMatch= i hereby attest and affirm that i have disclosed my medical history accurately, completely, and to the best of my knowledge. if there are any changes to my medical history, i will notify ezra at hello@ezra.com. 
+🐞 [2026-03-18T01:47:33.591Z] [DEBUG] [Questionnaire.js:324] entry= I hereby attest and affirm that I have disclosed my medical history accurately,async () => {
+        await this.clickButtonByName("Yes");
+        await this.clickContinueButton();
+      }
+🐞 [2026-03-18T01:47:33.591Z] [DEBUG] [Questionnaire.js:325] textToMatch= i hereby attest and affirm that i have disclosed my medical history accurately, completely, and to the best of my knowledge. if there are any changes to my medical history, i will notify ezra at hello@ezra.com. 
+ℹ️ [2026-03-18T01:47:33.591Z] [INFO] [Questionnaire.js:476] 🖱️ Clicking button: Yes
+ℹ️ [2026-03-18T01:47:33.630Z] [INFO] [Questionnaire.js:72] clickContinueButton: waiting for #next
+ℹ️ [2026-03-18T01:47:33.675Z] [INFO] [Questionnaire.js:78] clickContinueButton: clicked successfully
+🐞 [2026-03-18T01:47:34.184Z] [DEBUG] [Questionnaire.js:306] 🔄 27. Getting next screen... 🔄
+🐞 [2026-03-18T01:47:34.184Z] [DEBUG] [Questionnaire.js:240] ⏳ Waiting for completion screen (5000ms)
+✅ [2026-03-18T01:47:34.977Z] [SUCCESS] [Questionnaire.js:245] ✅ Congratulations! You’re all set. found.
+✅ [2026-03-18T01:47:34.977Z] [SUCCESS] [Questionnaire.js:308] ✅ Questionnaire completed!
+✅ [2026-03-18T01:47:34.977Z] [SUCCESS] [Questionnaire.js:341] 🎉 Flow finished
+ℹ️ [2026-03-18T01:47:34.980Z] [INFO] [timeoutManager.js:67] Test full questionnaire completed.
+ℹ️ [2026-03-18T01:47:34.980Z] [INFO] [timeoutManager.js:67] 🧪 Step 3. Logout from user 1.
+ℹ️ [2026-03-18T01:47:34.980Z] [INFO] [LoginPage.js:19] gotoHome.testUrl= https://myezra-staging.ezra.com/
+ℹ️ [2026-03-18T01:47:35.765Z] [INFO] [LoginPage.js:54] verifyUserLoggedIn
+🐞 [2026-03-18T01:47:35.845Z] [DEBUG] [LoginPage.js:69] 👉 "Accept" button not present, skipping...
+🐞 [2026-03-18T01:47:35.845Z] [DEBUG] [LoginPage.js:77] ⚠️ Waiting 5000ms for server to stabilize...
+✅ [2026-03-18T01:47:40.850Z] [SUCCESS] [LoginPage.js:80] ✅ Login successful!
+✅ [2026-03-18T01:47:41.265Z] [SUCCESS] [LoginPage.js:162] ✅ User logged out and returned to login page.
+ℹ️ [2026-03-18T01:47:41.265Z] [INFO] [task_queues:60] 🧪 Step 4. Login to user 2 and Assume is newly create. So no document, appointment, etc
+ℹ️ [2026-03-18T01:47:41.266Z] [INFO] [LoginPage.js:25] email= microgame.io.2026@gmail.com  pass= Testdemo@
+ℹ️ [2026-03-18T01:47:41.341Z] [INFO] [task_queues:60] 🧪 Step 4. Verify user 2 is empty.
+🐞 [2026-03-18T01:47:41.341Z] [DEBUG] [LoginPage.js:114] verifyTextOnPage.expectedText= no appointments  timeout= 5000  exactMatch= true
+✅ [2026-03-18T01:47:45.187Z] [SUCCESS] [LoginPage.js:122] ✅ Text "no appointments" is displayed on the page. URL: https://myezra-staging.ezra.com/
+ℹ️ [2026-03-18T01:47:45.188Z] [INFO] [timeoutManager.js:67] Test access questionnaire from another user completed.
+ℹ️ [2026-03-18T01:47:45.189Z] [INFO] [timeoutManager.js:68] Teardown: return to home
+ℹ️ [2026-03-18T01:47:45.189Z] [INFO] [LoginPage.js:19] gotoHome.testUrl= 
+ℹ️ [2026-03-18T01:47:45.422Z] [INFO] [timeoutManager.js:68] Test teardown: logging out and closing browser
+]]>
+</system-out>
+<system-err>
+<![CDATA[⚠️ [2026-03-18T01:45:08.452Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:14.058Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:19.703Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:25.352Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:32.191Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:40.044Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:45.662Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:51.449Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:45:57.058Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:02.670Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:08.299Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:13.904Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:19.516Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:25.128Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:30.745Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:36.397Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:42.084Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:47.704Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:53.322Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:46:58.957Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:47:05.528Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:47:11.155Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:47:16.748Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:47:22.352Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:47:27.959Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:47:33.571Z] [WARN] [Questionnaire.js:248] ⚠️ Congratulations! You’re all set. not found!
+⚠️ [2026-03-18T01:47:45.189Z] [WARN] [timeoutManager.js:67] Skip gotoHome (page already closed)
+]]>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>
